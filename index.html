@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>TailNG — Scalability of Angular. Simplicity of Tailwind.</title>
+    <meta
+      name="description"
+      content="TailNG is a modern Angular 21 component system built with Tailwind CSS. Token-based theming, standalone components, and no lock-in."
+    />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="TailNG" />
+    <meta
+      property="og:description"
+      content="Scalability of Angular. Simplicity of Tailwind."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://tailng.com" />
+
+    <!-- Theme -->
+    <meta name="theme-color" content="#12284b" />
+
+    <style>
+      :root {
+        --primary-color: #12284b;
+        --primary-hover: #1b3a6f;
+        --bg-color: #ffffff;
+        --text-color: #0f172a;
+        --muted-color: #475569;
+        --border-color: #e2e8f0;
+      }
+
+      * { box-sizing: border-box; }
+
+      body {
+        margin: 0;
+        font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+        background: var(--bg-color);
+        color: var(--text-color);
+        line-height: 1.5;
+      }
+
+      a { color: inherit; text-decoration: none; }
+
+      .container {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 0 1.25rem;
+      }
+
+      header { border-bottom: 1px solid var(--border-color); }
+      .header-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 72px;
+      }
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        font-weight: 700;
+        font-size: 1.25rem;
+        color: var(--primary-color);
+      }
+      .brand svg { width: 36px; height: 36px; }
+      nav a { margin-left: 1.25rem; font-size: 0.95rem; color: var(--muted-color); }
+      nav a:hover { color: var(--primary-color); }
+
+      .hero {
+        padding: 5rem 0 4rem;
+        text-align: center;
+      }
+      .hero-logo { margin-bottom: 1.5rem; }
+      .hero-logo svg { width: 96px; height: 96px; }
+      .hero h1 {
+        font-size: 2.75rem;
+        line-height: 1.15;
+        margin: 0 0 1rem;
+        color: var(--primary-color);
+      }
+      .hero p.tagline {
+        font-size: 1.25rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+        color: #e11d48;
+      }
+      .hero p.subtitle {
+        max-width: 720px;
+        margin: 0 auto 2.25rem;
+        color: var(--muted-color);
+        font-size: 1.05rem;
+      }
+      .cta { display: inline-flex; gap: 0.75rem; flex-wrap: wrap; justify-content: center; }
+      .btn {
+        padding: 0.7rem 1.25rem;
+        border-radius: 6px;
+        font-size: 0.95rem;
+        font-weight: 600;
+        border: 1px solid transparent;
+        cursor: pointer;
+      }
+      .btn-primary { background: var(--primary-color); color: #ffffff; }
+      .btn-primary:hover { background: var(--primary-hover); }
+      .btn-secondary { background: transparent; border-color: var(--border-color); color: var(--text-color); }
+      .btn-secondary:hover { border-color: var(--primary-color); color: var(--primary-color); }
+
+      .features { padding: 3.5rem 0; }
+      .features-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 1.5rem;
+      }
+      .feature {
+        border: 1px solid var(--border-color);
+        border-radius: 8px;
+        padding: 1.25rem;
+      }
+      .feature h3 { margin: 0 0 0.5rem; font-size: 1.05rem; color: var(--primary-color); }
+      .feature p { margin: 0; font-size: 0.95rem; color: var(--muted-color); }
+
+      footer {
+        border-top: 1px solid var(--border-color);
+        padding: 2rem 0;
+        margin-top: 3rem;
+        font-size: 0.85rem;
+        color: var(--muted-color);
+      }
+      footer .footer-inner {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: space-between;
+        align-items: center;
+      }
+      footer a { margin-left: 1rem; color: var(--muted-color); }
+      footer a:hover { color: var(--primary-color); }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div class="container header-inner">
+        <div class="brand">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="TailNG logo">
+            <g fill="#12284b" transform="translate(-17.5 -7) scale(0.52)">
+              <path d="M40 70 C85 25, 175 25, 220 70 L220 92 C175 55, 85 55, 40 92 Z" />
+              <rect x="122" y="80" width="16" height="72" rx="8" />
+              <path d="M130 150 C130 170, 158 170, 162 156 C164 149, 156 145, 151 149 C148 151, 146 154, 146 156 C145 160, 138 161, 138 150 Z" />
+              <text x="55" y="150" font-family="Roboto, system-ui, -apple-system, Segoe UI, Arial" font-size="92" font-weight="700" letter-spacing="-2">n</text>
+              <text x="155" y="150" font-family="Roboto, system-ui, -apple-system, Segoe UI, Arial" font-size="92" font-weight="700" letter-spacing="-2">g</text>
+            </g>
+          </svg>
+          TailNG
+        </div>
+        <nav>
+          <a href="https://tailng.dev" target="_blank" rel="noopener">Docs</a>
+          <a href="https://www.npmjs.com/package/@tailng-ui/ui" target="_blank" rel="noopener">npm</a>
+          <a href="https://github.com/tailng/tailng-ui" target="_blank" rel="noopener">GitHub</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero container">
+        <div class="hero-logo">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="TailNG logo">
+            <g fill="#12284b" transform="translate(-17.5 -7) scale(0.52)">
+              <path d="M40 70 C85 25, 175 25, 220 70 L220 92 C175 55, 85 55, 40 92 Z" />
+              <rect x="122" y="80" width="16" height="72" rx="8" />
+              <path d="M130 150 C130 170, 158 170, 162 156 C164 149, 156 145, 151 149 C148 151, 146 154, 146 156 C145 160, 138 161, 138 150 Z" />
+              <text x="55" y="150" font-family="Roboto, system-ui, -apple-system, Segoe UI, Arial" font-size="92" font-weight="700" letter-spacing="-2">n</text>
+              <text x="155" y="150" font-family="Roboto, system-ui, -apple-system, Segoe UI, Arial" font-size="92" font-weight="700" letter-spacing="-2">g</text>
+            </g>
+          </svg>
+        </div>
+        <h1>TailNG</h1>
+        <p class="tagline">Scalability of Angular. Simplicity of Tailwind.</p>
+        <p class="subtitle">A modern Angular 21 component system built with Tailwind CSS — token-based theming, standalone components, and zero lock-in.</p>
+        <div class="cta">
+          <a href="https://tailng.dev" class="btn btn-primary">Get Started</a>
+          <a href="https://www.npmjs.com/package/@tailng-ui/ui" class="btn btn-secondary">View on npm</a>
+          <a href="https://github.com/tailng/tailng-ui" class="btn btn-secondary">View on GitHub</a>
+        </div>
+      </section>
+
+      <section class="features container">
+        <div class="features-grid">
+          <div class="feature"><h3>Token-based theming</h3><p>Light / dark modes and brand themes using pure CSS variables.</p></div>
+          <div class="feature"><h3>Tailwind-first</h3><p>No abstractions over layout, spacing, or utilities.</p></div>
+          <div class="feature"><h3>Angular-native</h3><p>Standalone components, signals, and modern Angular APIs.</p></div>
+          <div class="feature"><h3>No lock-in</h3><p>Drop TailNG anytime. Your code remains standard Angular.</p></div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container footer-inner">
+        <div>© <span id="year"></span> TailNG</div>
+        <div>
+          <a href="https://tailng.dev" target="_blank" rel="noopener">Docs</a>
+          <a href="https://www.npmjs.com/package/@tailng-ui/ui" target="_blank" rel="noopener">npm</a>
+          <a href="https://github.com/tailng/tailng-ui" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
