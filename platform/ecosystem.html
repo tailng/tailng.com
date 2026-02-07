@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>TailNG — Ecosystem</title>
+    <meta name="description" content="TailNG packages: ui, theme, cdk, icons." />
+    <meta name="theme-color" content="#12284b" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="min-h-screen bg-white text-slate-900 antialiased">
+    <header class="sticky top-0 z-50 border-b border-slate-200/70 bg-white/80 backdrop-blur">
+      <div class="mx-auto flex h-16 max-w-6xl items-center justify-between px-5">
+        <a href="/" class="flex items-center gap-3">
+          <img
+            src="/assets/images/logo/logo-small.svg"
+            alt="TailNG logo"
+            class="h-9 w-9"
+          />
+          <span class="text-base font-semibold tracking-tight text-[#12284b]">TailNG</span>
+        </a>
+        <nav class="hidden items-center gap-6 text-sm font-medium text-slate-600 sm:flex">
+          <a href="/platform/story.html" class="hover:text-[#12284b]">Story</a>
+          <a href="/platform/principles.html" class="hover:text-[#12284b]">Principles</a>
+          <a href="/platform/ecosystem.html" class="text-[#12284b]">Ecosystem</a>
+          <a href="https://tailng.dev" target="_blank" rel="noopener" class="hover:text-[#12284b]">Docs</a>
+          <a href="https://www.npmjs.com/package/@tailng-ui/ui" target="_blank" rel="noopener" class="hover:text-[#12284b]">npm</a>
+          <a href="https://github.com/tailng/tailng-ui" target="_blank" rel="noopener" class="hover:text-[#12284b]">GitHub</a>
+        </nav>
+        <a href="https://tailng.dev" target="_blank" rel="noopener" class="sm:hidden rounded-md bg-[#12284b] px-3 py-2 text-sm font-semibold text-white hover:bg-[#1b3a6f]">Docs</a>
+      </div>
+    </header>
+
+    <main class="mx-auto max-w-6xl px-5 py-14">
+      <div class="mx-auto max-w-3xl">
+        <p class="text-sm font-semibold uppercase tracking-wide text-slate-500">Ecosystem</p>
+        <h1 class="mt-3 text-4xl font-extrabold tracking-tight text-[#12284b] sm:text-5xl">Packages</h1>
+        <p class="mt-4 text-base leading-relaxed text-slate-600">
+          TailNG is split into focused packages so you can adopt only what you need.
+        </p>
+
+        <div class="mt-10 grid gap-4">
+          <div class="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
+            <div class="flex items-center justify-between gap-4">
+              <h2 class="text-lg font-semibold text-[#12284b]">@tailng-ui/ui</h2>
+              <a class="text-sm font-semibold text-slate-600 hover:text-[#12284b]" href="https://www.npmjs.com/package/@tailng-ui/ui" target="_blank" rel="noopener">npm</a>
+            </div>
+            <p class="mt-2 text-sm text-slate-600">Components: Button, Input, Card, Forms, Layout primitives.</p>
+          </div>
+
+          <div class="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
+            <div class="flex items-center justify-between gap-4">
+              <h2 class="text-lg font-semibold text-[#12284b]">@tailng-ui/theme</h2>
+              <a class="text-sm font-semibold text-slate-600 hover:text-[#12284b]" href="https://www.npmjs.com/search?q=%40tailng-ui%2Ftheme" target="_blank" rel="noopener">npm</a>
+            </div>
+            <p class="mt-2 text-sm text-slate-600">Tokens + Tailwind preset/plugin for modes and themes.</p>
+          </div>
+
+          <div class="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
+            <div class="flex items-center justify-between gap-4">
+              <h2 class="text-lg font-semibold text-[#12284b]">@tailng-ui/cdk</h2>
+              <a class="text-sm font-semibold text-slate-600 hover:text-[#12284b]" href="https://www.npmjs.com/search?q=%40tailng-ui%2Fcdk" target="_blank" rel="noopener">npm</a>
+            </div>
+            <p class="mt-2 text-sm text-slate-600">Utilities and shared primitives used across TailNG packages.</p>
+          </div>
+
+          <div class="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
+            <div class="flex items-center justify-between gap-4">
+              <h2 class="text-lg font-semibold text-[#12284b]">@tailng-ui/icons</h2>
+              <a class="text-sm font-semibold text-slate-600 hover:text-[#12284b]" href="https://www.npmjs.com/search?q=%40tailng-ui%2Ficons" target="_blank" rel="noopener">npm</a>
+            </div>
+            <p class="mt-2 text-sm text-slate-600">Icon component built on @ng-icons/core (peer dependency).</p>
+          </div>
+        </div>
+
+        <div class="mt-10 rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
+          <div class="text-xs font-semibold uppercase tracking-wide text-slate-500">Install</div>
+          <pre class="mt-3 overflow-x-auto rounded-lg bg-slate-950 px-4 py-3 text-sm text-slate-50"><code>yarn add @tailng-ui/ui @tailng-ui/theme @tailng-ui/cdk</code></pre>
+          <p class="mt-3 text-xs text-slate-500">Then follow the docs for Tailwind setup and theming.</p>
+          <a href="https://tailng.dev" target="_blank" rel="noopener" class="mt-3 inline-flex text-sm font-semibold text-[#12284b] hover:underline">Open docs →</a>
+        </div>
+      </div>
+    </main>
+
+    <footer class="border-t border-slate-200">
+      <div class="mx-auto flex max-w-6xl flex-col gap-3 px-5 py-10 text-sm text-slate-600 sm:flex-row sm:items-center sm:justify-between">
+        <div>© <span id="year"></span> TailNG</div>
+        <div class="flex items-center gap-5">
+          <a href="/platform/story.html" class="hover:text-[#12284b]">Story</a>
+          <a href="/platform/principles.html" class="hover:text-[#12284b]">Principles</a>
+          <a href="/platform/ecosystem.html" class="hover:text-[#12284b]">Ecosystem</a>
+          <a href="https://tailng.dev" target="_blank" rel="noopener" class="hover:text-[#12284b]">Docs</a>
+          <a href="https://www.npmjs.com/package/@tailng-ui/ui" target="_blank" rel="noopener" class="hover:text-[#12284b]">npm</a>
+          <a href="https://github.com/tailng/tailng-ui" target="_blank" rel="noopener" class="hover:text-[#12284b]">GitHub</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
