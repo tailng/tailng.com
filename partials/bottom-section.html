@@ -1,0 +1,25 @@
+    <!-- Footer -->
+    <footer class="border-t border-slate-200">
+      <div class="mx-auto flex max-w-6xl flex-col gap-3 px-5 py-10 text-sm text-slate-600 sm:flex-row sm:items-center sm:justify-between">
+        <div class="flex items-center gap-2">
+          <span>© <span id="year"></span> TailNG</span>
+          <span class="hidden text-slate-300 sm:inline">•</span>
+          <span class="text-slate-500">MIT Licensed</span>
+        </div>
+        <div class="flex items-center gap-5">
+          <a href="/platform/story.html" class="hover:text-[#12284b]">Story</a>
+          <a href="/platform/principles.html" class="hover:text-[#12284b]">Principles</a>
+          <a href="/platform/ecosystem.html" class="hover:text-[#12284b]">Ecosystem</a>
+          <a href="/platform/news/" class="hover:text-[#12284b]">News</a>
+          <a href="https://tailng.dev" target="_blank" rel="noopener" class="hover:text-[#12284b]">Docs</a>
+          <a href="https://www.npmjs.com/package/@tailng-ui/ui" target="_blank" rel="noopener" class="hover:text-[#12284b]">npm</a>
+          <a href="https://github.com/tailng/tailng-ui" target="_blank" rel="noopener" class="hover:text-[#12284b]">GitHub</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
