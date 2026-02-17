@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" href="/favicon.ico" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>TailNG — Time Picker Component Added</title>
+    <meta name="description" content="TailNG adds a Time Picker component — overlay-driven, token-friendly, and designed for scalable Angular applications." />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="TailNG — Time Picker Component Added" />
+    <meta property="og:description" content="TailNG adds a Time Picker component — overlay-driven, token-friendly, and designed for scalable Angular applications." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://tailng.com" />
+
+    <!-- Theme -->
+    <meta name="theme-color" content="#12284b" />
+
+    <!-- Tailwind CSS (CDN for landing page) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="min-h-screen bg-white text-slate-900 antialiased">
+    <header class="sticky top-0 z-50 border-b border-slate-200/70 bg-white/80 backdrop-blur">
+      <div class="mx-auto flex h-16 max-w-6xl items-center justify-between px-5">
+        <a href="/" class="flex items-center gap-3">
+          <img src="/assets/images/logo/logo-small.svg" alt="TailNG logo" class="h-9 w-9" />
+          <span class="text-base font-semibold tracking-tight text-[#12284b]">TailNG</span>
+        </a>
+
+        <nav class="hidden items-center gap-6 text-sm font-medium text-slate-600 sm:flex">
+          <a href="/platform/story.html" class="hover:text-[#12284b]">Story</a>
+          <a href="/platform/principles.html" class="hover:text-[#12284b]">Principles</a>
+          <a href="/platform/ecosystem.html" class="hover:text-[#12284b]">Ecosystem</a>
+          <a href="/platform/news/" class="hover:text-[#12284b]">News</a>
+          <a href="https://tailng.dev" target="_blank" rel="noopener" class="hover:text-[#12284b]">Docs</a>
+          <a href="https://www.npmjs.com/package/@tailng-ui/ui" target="_blank" rel="noopener" class="hover:text-[#12284b]">npm</a>
+          <a href="https://github.com/tailng/tailng-ui" target="_blank" rel="noopener" class="hover:text-[#12284b]">GitHub</a>
+        </nav>
+
+        <a
+          href="https://tailng.dev"
+          target="_blank"
+          rel="noopener"
+          class="inline-flex items-center justify-center rounded-md bg-[#12284b] px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-[#1b3a6f] sm:hidden"
+        >
+          Docs
+        </a>
+      </div>
+    </header>
+<main>
+  <section class="relative overflow-hidden">
+    <div class="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(18,40,75,0.10),transparent_60%)]"></div>
+
+    <div class="mx-auto max-w-6xl px-5 py-14">
+      <div class="mx-auto max-w-3xl">
+        <!-- Breadcrumb -->
+        <div class="flex flex-wrap items-center gap-2 text-sm text-slate-600">
+          <a href="/" class="hover:text-[#12284b]">Home</a>
+          <span class="text-slate-300">/</span>
+          <a href="/platform/news/" class="hover:text-[#12284b]">News</a>
+          <span class="text-slate-300">/</span>
+          <span class="text-slate-500">Time Picker</span>
+        </div>
+
+        <div class="mt-6 flex flex-wrap items-center gap-3">
+          <span class="inline-flex items-center rounded-full border border-slate-200 bg-white px-2.5 py-1 text-xs font-semibold text-slate-700">
+            Component
+          </span>
+          <span class="text-xs font-medium text-slate-500">New</span>
+        </div>
+
+        <h1 class="mt-4 text-4xl font-extrabold tracking-tight text-[#12284b] sm:text-5xl">
+          Time Picker component added
+        </h1>
+
+        <p class="mt-4 text-lg font-semibold text-[#e11d48]">
+          Overlay-driven. Token-safe. Built for enterprise-grade Angular forms.
+        </p>
+
+        <div class="mt-10 space-y-10">
+          <!-- Focus -->
+          <section class="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
+            <h2 class="text-xl font-semibold text-[#12284b]">
+              What this component focuses on
+            </h2>
+
+            <ul class="mt-4 list-disc space-y-2 pl-5 text-sm text-slate-700">
+              <li>
+                <span class="font-semibold">Scalable architecture:</span>
+                built using TailNG overlay primitives and slot-based styling.
+              </li>
+              <li>
+                <span class="font-semibold">Theme safety:</span>
+                fully compatible with token-based light/dark modes.
+              </li>
+              <li>
+                <span class="font-semibold">Form integration:</span>
+                designed for Angular reactive and template-driven forms.
+              </li>
+              <li>
+                <span class="font-semibold">Keyboard accessibility:</span>
+                predictable navigation and interaction patterns.
+              </li>
+            </ul>
+          </section>
+
+          <!-- Capabilities -->
+          <section class="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
+            <h2 class="text-xl font-semibold text-[#12284b]">
+              Capabilities
+            </h2>
+
+            <div class="mt-5 grid gap-4 sm:grid-cols-2">
+              <div class="rounded-lg border border-slate-200 bg-white p-5">
+                <div class="text-xs font-semibold uppercase tracking-wide text-slate-500">
+                  Selection model
+                </div>
+                <ul class="mt-3 list-disc space-y-2 pl-5 text-sm text-slate-700">
+                  <li>Hour selection</li>
+                  <li>Minute selection</li>
+                  <li>12h / 24h formats</li>
+                  <li>AM/PM toggle (if applicable)</li>
+                </ul>
+              </div>
+
+              <div class="rounded-lg border border-slate-200 bg-white p-5">
+                <div class="text-xs font-semibold uppercase tracking-wide text-slate-500">
+                  Customization
+                </div>
+                <ul class="mt-3 list-disc space-y-2 pl-5 text-sm text-slate-700">
+                  <li>Slot-based micro styling</li>
+                  <li>Token-based theming</li>
+                  <li>Layout controlled via Tailwind utilities</li>
+                  <li>Composable overlay positioning</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <!-- Install -->
+          <section class="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
+            <h2 class="text-xl font-semibold text-[#12284b]">Install</h2>
+
+            <pre class="mt-4 overflow-x-auto rounded-lg bg-slate-950 px-4 py-3 text-sm text-slate-50"><code>yarn add @tailng-ui/ui @tailng-ui/theme @tailng-ui/cdk</code></pre>
+
+            <p class="mt-3 text-sm text-slate-600">
+              Time Picker ships as part of <span class="font-mono">@tailng-ui/ui</span>.
+            </p>
+          </section>
+
+          <!-- Usage -->
+          <section class="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
+            <h2 class="text-xl font-semibold text-[#12284b]">Usage (example)</h2>
+
+            <div class="mt-4 rounded-lg border border-slate-200 bg-white p-5">
+              <div class="text-xs font-semibold uppercase tracking-wide text-slate-500">
+                Template
+              </div>
+
+              <pre class="mt-3 overflow-x-auto rounded-lg bg-slate-950 px-4 py-3 text-sm text-slate-50"><code>&lt;div class=&quot;grid gap-3 sm:grid-cols-2&quot;&gt;
+  &lt;label class=&quot;text-sm font-semibold text-slate-700&quot;&gt;Start time&lt;/label&gt;
+  &lt;tng-time-picker /&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+
+            <div class="mt-4 rounded-lg border border-slate-200 bg-white p-5">
+              <div class="text-xs font-semibold uppercase tracking-wide text-slate-500">
+                Notes
+              </div>
+              <ul class="mt-3 list-disc space-y-2 pl-5 text-sm text-slate-700">
+                <li>Use Tailwind utilities for layout and spacing.</li>
+                <li>Leverage slot-based styling for granular control.</li>
+                <li>Keep formatting logic controlled at application level.</li>
+              </ul>
+            </div>
+          </section>
+
+          <!-- Next -->
+          <section class="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
+            <h2 class="text-xl font-semibold text-[#12284b]">Next</h2>
+
+            <div class="mt-4 flex flex-col gap-3 sm:flex-row">
+              <a
+                href="https://tailng.dev"
+                target="_blank"
+                rel="noopener"
+                class="inline-flex items-center justify-center rounded-md bg-[#12284b] px-5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-[#1b3a6f]"
+              >
+                Open docs
+              </a>
+
+              <a
+                href="/platform/news/"
+                class="inline-flex items-center justify-center rounded-md border border-slate-200 bg-white px-5 py-2.5 text-sm font-semibold text-slate-900 shadow-sm hover:border-[#12284b] hover:text-[#12284b]"
+              >
+                Back to updates
+              </a>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<!-- Footer -->
+    <footer class="border-t border-slate-200">
+      <div class="mx-auto flex max-w-6xl flex-col gap-3 px-5 py-10 text-sm text-slate-600 sm:flex-row sm:items-center sm:justify-between">
+        <div class="flex items-center gap-2">
+          <span>© <span id="year"></span> TailNG</span>
+          <span class="hidden text-slate-300 sm:inline">•</span>
+          <span class="text-slate-500">MIT Licensed</span>
+        </div>
+        <div class="flex items-center gap-5">
+          <a href="/platform/story.html" class="hover:text-[#12284b]">Story</a>
+          <a href="/platform/principles.html" class="hover:text-[#12284b]">Principles</a>
+          <a href="/platform/ecosystem.html" class="hover:text-[#12284b]">Ecosystem</a>
+          <a href="/platform/news/" class="hover:text-[#12284b]">News</a>
+          <a href="https://tailng.dev" target="_blank" rel="noopener" class="hover:text-[#12284b]">Docs</a>
+          <a href="https://www.npmjs.com/package/@tailng-ui/ui" target="_blank" rel="noopener" class="hover:text-[#12284b]">npm</a>
+          <a href="https://github.com/tailng/tailng-ui" target="_blank" rel="noopener" class="hover:text-[#12284b]">GitHub</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
