@@ -82,10 +82,10 @@ function generateOne(filePath, topBase, bottomBase) {
 
   // If a page doesn't specify title/description, fall back to sane defaults
   const title =
-    meta.title || "TailNG — Scalability of Angular. Simplicity of Tailwind.";
+    meta.title || "TailNG — Angular UI Components That Work with Plain CSS and Tailwind.";
   const description =
     meta.description ||
-    "TailNG is a modern Angular 21 component system built with Tailwind CSS. Token-based theming, standalone components, and no lock-in.";
+    "TailNG is a modern Angular component system that works with plain CSS, Tailwind, or your own design system. It provides token-based theming, standalone components, and flexible styling without lock-in.";
 
   const top = topBase.split(TITLE_TOKEN).join(title).split(DESC_TOKEN).join(description);
   const html = `${top}\n${body}\n${bottomBase}\n`;
